@@ -29,7 +29,7 @@ You want even more customization??? **Get out your Nunchuk.** *(D-Pad directions
 
 * Separate the 5-block cap between different types of blocks - maybe also add new types of blocks...?
 
-* Portal blocks - spawn a blue switch block in one room and a red switch block anywhere else, then hit either block to teleport to the other room. These will operate on their own block cap.
+* Portal blocks - spawn a blue switch block in one room and a red switch block anywhere else, then hit either block to teleport to the other one. These will operate on their own block cap.
 
 * Possible B-Down overhaul, or at least a separate option to remove the last block spawned instead of every single one.
 
