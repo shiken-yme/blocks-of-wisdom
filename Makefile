@@ -4,8 +4,6 @@
 .SUFFIXES:
 #---------------------------------------------------------------------------------
 
-export TTYDTOOLS = ../ttyd-tools
-
 ifeq ($(strip $(DEVKITPPC)),)
 $(error "Please set DEVKITPPC in your environment. export DEVKITPPC=<path to>devkitPPC")
 endif

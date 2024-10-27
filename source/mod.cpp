@@ -382,8 +382,6 @@ namespace mod
                             USER_FUNC(spm::evt_mario::evt_mario_get_pos, LW(0), LW(1), LW(2))
                             USER_FUNC(evtMarioChkKey, LW(15), LW(5), LW(6)) // Get 3D and angle state
                             USER_FUNC(spm::evt_snd::evt_snd_sfxon_3d, PTR("SFX_MOBJ_BLUE_SWITCH1"), LW(0), LW(1), LW(2))
-                            SET(GSW(72), GSW(74))
-                            USER_FUNC(setBlkStr, 2)
                             ADD(LW(1), GSW(73))
                             // Modify X and Z coords based on facing direction & 3D state
                             IF_EQUAL(LW(5), 0) // In 2D
@@ -414,8 +412,6 @@ namespace mod
                             USER_FUNC(spm::evt_mario::evt_mario_get_pos, LW(0), LW(1), LW(2))
                             USER_FUNC(evtMarioChkKey, LW(15), LW(5), LW(6)) // Get 3D and angle state
                             USER_FUNC(spm::evt_snd::evt_snd_sfxon_3d, PTR("SFX_MOBJ_BLUE_SWITCH1"), LW(0), LW(1), LW(2))
-                            SET(GSW(72), GSW(74))
-                            USER_FUNC(setBlkStr, 2)
                             ADD(LW(1), GSW(73))
                             // Modify X and Z coords based on facing direction & 3D state
                             IF_EQUAL(LW(5), 0) // In 2D
@@ -528,5 +524,6 @@ namespace mod
         wii::os::OSReport("SPM Rel Loader: the mod has ran!\n");
         titleScreenCustomTextPatch();
         evtPatches();
+        writeWord(spm::evt_mobj::evt_mobj_blk, 0xa4, 0x38600000); // JohnP55: Make blocks appear even in intermissions
     }
 }
