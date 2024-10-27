@@ -235,8 +235,8 @@ namespace mod
         SET_READ(PTR(blockNames))
         IF_EQUAL(GSWF(238), 0) // Check if block spawn pos values have been initialized before; if not, set them.
             SET(GSWF(238), 1)
-            SET(GSW(73), 70)
-            SET(GSW(74), 70)
+            SET(GSW(73), 80)
+            SET(GSW(74), 80)
         END_IF()
         DO(0)
             IF_LARGE(GSW(69), 0)
