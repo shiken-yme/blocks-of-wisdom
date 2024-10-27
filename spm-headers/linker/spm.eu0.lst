@@ -434,11 +434,13 @@
 // mario.c
 80121f48:marioGetPtr
 80122af0:marioChkKey
+80122b4c:marioCtrlOnChk
 80122b68:marioCtrlOffChk
 80122b7c:marioKeyOffChk
 80122bf4:marioKeyOff
 80122c2c:marioKeyOn
 8012a680:marioTakeDamage
+8012b080:marioCheck3d
 8012b50c:marioSetGravity
 8012a3a8:marioCalcDamageToEnemy
 // more
